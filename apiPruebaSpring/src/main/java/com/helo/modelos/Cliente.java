@@ -23,7 +23,7 @@ public class Cliente  implements Serializable  {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;//el id debe ser siempre un dato primitivo
+	private long id;//el id debe ser siempre un dato primitivo
 	@Column(name="nombre") //@column (name) 
 	private String nombre;
 	@Column(name="edad")
@@ -35,10 +35,10 @@ public class Cliente  implements Serializable  {
 	
 	private static final long serialVersionUID = 1L;
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	public String getNombre() {
